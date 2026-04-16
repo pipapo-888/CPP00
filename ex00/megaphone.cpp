@@ -6,7 +6,16 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/16 10:49:16 by knomura           #+#    #+#             */
-/*   Updated: 2026/04/16 10:49:19 by knomura          ###   ########.fr       */
+/*   Updated: 2026/04/16 12:19:55 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
+int main()
+{
+	printf("C++ Start\n");
+
+
+	return (0);
+}
