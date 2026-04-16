@@ -6,16 +6,21 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/16 10:49:16 by knomura           #+#    #+#             */
-/*   Updated: 2026/04/16 12:19:55 by knomura          ###   ########.fr       */
+/*   Updated: 2026/04/16 13:14:34 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <iostream>
 
-int main()
+
+int main(int ac, char **av)
 {
-	printf("C++ Start\n");
-
+	if (ac != 2 || av[1][0] == '\0')
+		return (1);
+	for (int i = 0; av[1][i]; i++)
+		av[1][i] = std::toupper(av[1][i]);
+	
+	std::cout << av[1] << std::endl;
 
 	return (0);
 }
