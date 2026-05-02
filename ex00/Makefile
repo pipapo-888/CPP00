@@ -6,13 +6,13 @@
 #    By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/16 11:18:04 by knomura           #+#    #+#              #
-#    Updated: 2026/04/28 18:44:06 by knomura          ###   ########.fr        #
+#    Updated: 2026/04/28 18:56:18 by knomura          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = megaphone
 
-CC = g++
+CC = c++
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
@@ -30,7 +30,6 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-	echo "test check"
 
 re: fclean all
 
