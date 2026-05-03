@@ -6,21 +6,28 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/16 10:49:16 by knomura           #+#    #+#             */
-/*   Updated: 2026/04/16 13:31:13 by knomura          ###   ########.fr       */
+/*   Updated: 2026/05/03 19:09:25 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-
+#include <cctype>
 
 int main(int ac, char **av)
 {
-	if (ac != 2 || av[1][0] == '\0')
-		return (1);
-	for (int i = 0; av[1][i]; i++)
-		av[1][i] = std::toupper(av[1][i]);
+	if (ac == 1)
+	{
+		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
+		return 0;
+	}
+	for (int i = 1; i < ac; i++)
+		for (int j = 0; av[i][j]; j++)
+			av[i][j] = std::toupper(av[i][j]);
 	
-	std::cout << av[1] << std::endl;
+	for (int i = 1; i < ac; i++)
+		std::cout << av[i];
+	
+	std::cout << std::endl;
 
 	return (0);
 }

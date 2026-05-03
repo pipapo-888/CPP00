@@ -6,7 +6,7 @@
 #    By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/16 11:18:04 by knomura           #+#    #+#              #
-#    Updated: 2026/04/28 18:56:18 by knomura          ###   ########.fr        #
+#    Updated: 2026/05/03 19:33:17 by knomura          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ OBJS = $(SRCS:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $(OBJS)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
 
 clean: 
 	rm -f $(OBJS)
