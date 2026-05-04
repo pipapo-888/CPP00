@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 20:19:59 by knomura           #+#    #+#             */
-/*   Updated: 2026/05/04 06:33:03 by knomura          ###   ########.fr       */
+/*   Updated: 2026/05/04 10:52:47 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,10 @@ int main()
 	while (1)
 	{
 		std::cout << "cmd: ";
-		std::getline(std::cin, line);
+		if (!std::getline(std::cin, line))
+		{
+			std::cout << "eror";
+		}
 		if (line == "EXIT")
 		{
 			std::cout << "exit" << std::endl;
