@@ -6,17 +6,19 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 20:19:59 by knomura           #+#    #+#             */
-/*   Updated: 2026/05/04 10:52:47 by knomura          ###   ########.fr       */
+/*   Updated: 2026/06/28 22:13:26 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
 #include "contact.h"
+#include "phoneBook.h"
 
 int main()
 {
 	std::string line;
+	PhoneBook phonebook;
 
 	while (1)
 	{
@@ -33,9 +35,8 @@ int main()
 		else if (line == "ADD")
 		{
 			std::cout << "add" << std::endl;
-			Contact contact;
-			contact.set_contact();
-			std::cout << contact.get_value("first_name") << std::endl;
+			
+			phonebook.create_contact();
 			
 		}
 		else if (line == "SEARCH")

@@ -6,12 +6,23 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 22:12:41 by knomura           #+#    #+#             */
-/*   Updated: 2026/05/03 22:13:12 by knomura          ###   ########.fr       */
+/*   Updated: 2026/06/28 22:11:57 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP
+#define PHONEBOOK_HPP
 
+#include "contact.h"
 
-# endif
+class PhoneBook
+{
+	private:
+		Contact contacts[8];
+
+	public:
+		PhoneBook();
+		void create_contact();
+};
+
+#endif

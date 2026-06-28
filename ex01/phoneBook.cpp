@@ -6,8 +6,15 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 22:47:37 by knomura           #+#    #+#             */
-/*   Updated: 2026/05/04 09:52:34 by knomura          ###   ########.fr       */
+/*   Updated: 2026/06/28 22:16:38 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "phoneBook.h"
 
+void PhoneBook::create_contact()
+{
+	if(this->contacts[7] != NULL)
+		
+	
+}
