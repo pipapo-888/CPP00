@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/04 04:33:26 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/04 19:34:38 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/04 20:13:04 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ void Contact::set_contact()
 {
 	std::string input;
 
+
+	// 入力チェックする　空かどうかとその他のvalidationが必要化subject 読む
 	std::cout << std::setw(14) << "first name: ";
 	std::getline(std::cin, input);
 	first_name = input;
