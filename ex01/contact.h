@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 22:25:40 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/04 00:40:20 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/04 17:52:42 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,13 @@ private:
 	std::string nickname;
 	std::string phone_number;
 	std::string darkest_secret;
+
+	void display_contact_value(std::string val);
 	
 public:
 	Contact();
 	void check_input(); // for examination
+	void show_contact();
 	void set_contact();
 	std::string get_value(const std::string &type);
 	
