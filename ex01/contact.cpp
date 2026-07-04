@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/04 04:33:26 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/04 19:26:52 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/04 19:34:38 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,33 +48,32 @@ void Contact::set_contact()
 {
 	std::string input;
 
-	std::cout << "first name: ";
+	std::cout << std::setw(14) << "first name: ";
 	std::getline(std::cin, input);
 	first_name = input;
 
-	std::cout << "last name: ";
+	std::cout << std::setw(14) << "last name: ";
 	std::getline(std::cin, input);
 	last_name = input;
 
-	std::cout << "nickname: ";
+	std::cout << std::setw(14) << "nickname: ";
 	std::getline(std::cin, input);
 	nickname = input;
 
-	std::cout << "phone number: ";
+	std::cout << std::setw(14) << "phone number: ";
 	std::getline(std::cin, input);
 	phone_number = input;
 
-	std::cout << "secret: ";
+	std::cout << std::setw(14) << "secret: ";
 	std::getline(std::cin, input);
 	darkest_secret = input;
 
-	// check_input();
 }
 
-std::string Contact::get_value(const std::string &type)
-{
-	if (type == "first_name")
-		return (first_name);
-	else
-		return ("wrong");
-}
+// std::string Contact::get_value(const std::string &type)
+// {
+// 	if (type == "first_name")
+// 		return (first_name);
+// 	else
+// 		return ("wrong");
+// }

@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 20:19:59 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/04 00:36:40 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/04 19:35:52 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,9 @@ int main()
 	std::string line;
 	PhoneBook phonebook;
 
-	
-
 	while (1)
 	{
-		std::cout << "cmd: ";
+		std::cout << "PhoneBook> ";
 		if (!std::getline(std::cin, line))
 		{
 			std::cout << "error";
@@ -41,10 +39,7 @@ int main()
 			phonebook.show_contacts();
 		}
 		else if (line == "EXIT")
-		{
-			std::cout << "exit" << std::endl;
 			break;
-		}
 		else
 			std::cout << "WRONG INPUT" << std::endl;		
 	}
