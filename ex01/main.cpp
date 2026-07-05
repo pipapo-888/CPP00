@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 20:19:59 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/04 20:15:47 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/05 18:08:59 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,9 @@ int main()
 			break;
 		}
 		if (line == "ADD")
-		{			
 			phonebook.create_contact();
-		}
 		else if (line == "SEARCH")
-		{
-			std::cout << "search" << std::endl;
 			phonebook.show_contacts();
-		}
 		else if (line == "EXIT")
 			break;
 		else
