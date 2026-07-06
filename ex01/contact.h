@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 22:25:40 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/05 16:50:23 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/07 01:07:42 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ private:
 	std::string darkest_secret;
 
 	void display_contact_value(std::string val);
+	void set_contact_value(std::string type);
 	
 public:
 	Contact();

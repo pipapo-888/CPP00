@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/04 04:33:26 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/05 18:41:44 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/07 01:08:09 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,6 @@ void Contact::set_contact()
 {
 	std::string input;
 
-	// 入力チェックする　空かどうかとその他のvalidationが必要化subject 読む
-
 	while (input.empty())
 	{
 		std::cout << std::setw(14) << "first name: ";
@@ -95,11 +93,3 @@ void Contact::set_contact()
 	}
 	darkest_secret = input;
 }
-
-// std::string Contact::get_value(const std::string &type)
-// {
-// 	if (type == "first_name")
-// 		return (first_name);
-// 	else
-// 		return ("wrong");
-// }

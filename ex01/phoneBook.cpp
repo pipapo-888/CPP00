@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 22:47:37 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/05 18:08:16 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/07 01:05:54 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,6 @@
 #include <iomanip>
 #include <cstdlib>
 #include <cctype>
-
-// PhoneBook::PhoneBook()
-// {
-// 	count = 0;
-// }
 
 PhoneBook::PhoneBook() : count(0) {}
 

@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 20:19:59 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/05 18:08:59 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/07 01:03:02 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main()
 		std::cout << "PhoneBook> ";
 		if (!std::getline(std::cin, line))
 		{
-			std::cout << "error";
+			std::cout <<std::endl << "Error" << std::endl;
 			break;
 		}
 		if (line == "ADD")
