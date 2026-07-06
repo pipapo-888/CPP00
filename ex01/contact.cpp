@@ -6,11 +6,12 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/04 04:33:26 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/07 01:08:09 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/07 01:53:39 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iomanip>
+#include <cstdlib>
 #include "contact.h"
 
 Contact::Contact() {}
@@ -48,48 +49,33 @@ void Contact::show_contact()
 	std::cout << std::endl;
 }
 
-void Contact::set_contact()
+bool Contact::set_contact_value(std::string label, std::string &field)
 {
 	std::string input;
 
-	while (input.empty())
+	while (input.empty() || input.find_first_not_of(' ') == std::string::npos)
 	{
-		std::cout << std::setw(14) << "first name: ";
-		std::getline(std::cin, input);
+		std::cout << std::setw(14) << label;
+		if (!std::getline(std::cin, input))
+		{
+			std::cout << std::endl;
+			return false;
+		}
 	}
-	first_name = input;
+	field = input;
+	return true;
+}
 
-	input = "";
-
-	while (input.empty())
-	{
-		std::cout << std::setw(14) << "last name: ";
-		std::getline(std::cin, input);
-	}
-	last_name = input;
-
-	input = "";
-
-	while (input.empty())
-	{
-		std::cout << std::setw(14) << "nickname: ";
-		std::getline(std::cin, input);
-	}
-	nickname = input;
-	input = "";
-
-	while (input.empty())
-	{	
-		std::cout << std::setw(14) << "phone number: ";
-		std::getline(std::cin, input);
-	}
-	phone_number = input;
-	input = "";
-
-	while (input.empty())
-	{	
-		std::cout << std::setw(14) << "secret: ";
-		std::getline(std::cin, input);
-	}
-	darkest_secret = input;
+void Contact::set_contact()
+{
+	if (!set_contact_value("first name: ", first_name))
+		return;
+	if (!set_contact_value("last name: ", last_name))
+		return;
+	if (!set_contact_value("nickname: ", nickname))
+		return;
+	if (!set_contact_value("phone number: ", phone_number))
+		return;
+	if (!set_contact_value("secret: ", darkest_secret))
+		return;
 }

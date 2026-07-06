@@ -26,7 +26,7 @@ private:
 	std::string darkest_secret;
 
 	void display_contact_value(std::string val);
-	void set_contact_value(std::string type);
+	bool set_contact_value(std::string label, std::string &field);
 	
 public:
 	Contact();
