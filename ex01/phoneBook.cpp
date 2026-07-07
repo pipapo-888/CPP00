@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 22:47:37 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/07 01:05:54 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/07 22:26:17 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ void PhoneBook::show_contacts()
 	while (1)
 	{
 		std::cout << "Select an index from above: ";
-		std::getline(std::cin, line);
+		if(!std::getline(std::cin, line))
+			return ;
 		int num = std::atoi(line.c_str());
-
 		if (std::isdigit(line[0]) && num >= 0 && num < 8 && num < count)
 		{
 			contacts[num].check_input();
