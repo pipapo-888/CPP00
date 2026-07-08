@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/04 04:33:26 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/07 01:53:39 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/08 13:32:06 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,15 @@ void Contact::check_input()
 {
 	if (first_name == "")
 		return;
-	std::cout <<  std::setfill('-') <<std::setw(44) << "" << std::setfill(' ') << std::endl;
-	
+	std::cout << std::setfill('-') << std::setw(44) << "" << std::setfill(' ') << std::endl;
+
 	std::cout << std::setw(14) << "first name: " << first_name << std::endl;
 	std::cout << std::setw(14) << "last name: " << last_name << std::endl;
 	std::cout << std::setw(14) << "nickname: " << nickname << std::endl;
 	std::cout << std::setw(14) << "phone number: " << phone_number << std::endl;
 	std::cout << std::setw(14) << "secret: " << darkest_secret << std::endl;
 
-	std::cout <<  std::setfill('-') <<std::setw(44) << "" << std::setfill(' ') << std::endl;
+	std::cout << std::setfill('-') << std::setw(44) << "" << std::setfill(' ') << std::endl;
 }
 
 void Contact::display_contact_value(std::string val)

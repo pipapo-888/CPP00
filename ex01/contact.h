@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 22:25:40 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/07 01:07:42 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/08 13:31:37 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ private:
 
 	void display_contact_value(std::string val);
 	bool set_contact_value(std::string label, std::string &field);
-	
+
 public:
 	Contact();
 	void check_input();
 	void show_contact();
-	void set_contact();	
+	void set_contact();
 };
 
 #endif

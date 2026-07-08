@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 22:12:41 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/04 00:36:33 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/08 13:31:44 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,14 @@
 
 class PhoneBook
 {
-	private:
-		Contact contacts[8];
-		int 	count;
+private:
+	Contact contacts[8];
+	int count;
 
-	public:
-		PhoneBook();
-		void create_contact();
-		void show_contacts();
-
+public:
+	PhoneBook();
+	void create_contact();
+	void show_contacts();
 };
 
 #endif
