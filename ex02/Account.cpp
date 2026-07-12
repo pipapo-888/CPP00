@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/11 20:04:12 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/12 17:03:04 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/12 17:08:18 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ void Account::makeDeposit(int deposit)
 	_totalNbDeposits++;
 	std::cout << "index:" << _accountIndex
 			  << ";p_amount:" << _amount
-			  << ";deposits:" << deposit
+			  << ";deposit:" << deposit
 			  << ";amount:" << _amount + deposit
 			  << ";nb_deposits:" << _nbDeposits
 			  << std::endl;
@@ -94,6 +94,11 @@ bool Account::makeWithdrawal(int withdrawal)
 			<< ";nb_withdrawals:" << _nbWithdrawals
 			<< std::endl;
 	return true;
+}
+
+int Account::checkAmount() const
+{
+	return _amount;
 }
 
 void Account::displayStatus() const
