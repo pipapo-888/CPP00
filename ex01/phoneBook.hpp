@@ -1,38 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   contact.h                                          :+:      :+:    :+:   */
+/*   phoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/03 22:25:40 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/08 13:31:37 by knomura          ###   ########.fr       */
+/*   Created: 2026/05/03 22:12:41 by knomura           #+#    #+#             */
+/*   Updated: 2026/07/29 15:33:14 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONTACT_HPP
-#define CONTACT_HPP
+#ifndef PHONEBOOK_HPP
+#define PHONEBOOK_HPP
 
-#include <iostream>
-#include <string>
+#include "contact.hpp"
 
-class Contact
+class PhoneBook
 {
 private:
-	std::string first_name;
-	std::string last_name;
-	std::string nickname;
-	std::string phone_number;
-	std::string darkest_secret;
-
-	void display_contact_value(std::string val);
-	bool set_contact_value(std::string label, std::string &field);
+	Contact contacts[8];
+	int count;
 
 public:
-	Contact();
-	void check_input();
-	void show_contact();
-	void set_contact();
+	PhoneBook();
+	void create_contact();
+	void show_contacts();
 };
 
 #endif

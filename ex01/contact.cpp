@@ -6,13 +6,13 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/04 04:33:26 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/11 17:42:14 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/29 15:33:25 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iomanip>
 #include <cstdlib>
-#include "contact.h"
+#include "contact.hpp"
 
 Contact::Contact() {}
 
